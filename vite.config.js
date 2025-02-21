@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-  ],  
-  base: "/Weather_webApp",
+  ],
+  base: "/weather_webApp",
 })
