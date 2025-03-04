@@ -3,6 +3,7 @@ import RecentInfo from "./components/recentInfo"
 import Forecast from "./components/forecast"
 import Search from "./components/search"
 import { useState } from "react"
+import Clock from "./components/Clock.jsx"
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <>
+      <CLock/>
       <div className="flex flex-col items-center justify-center">
         <Search onInputChange={handleOnInputChange}/>
         {weatherInfo ? <RecentInfo weather={weatherInfo}/> : <p className="mt-50 text-xl text-white font-bold">Search to see results</p>}
